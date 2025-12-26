@@ -3,14 +3,14 @@ pipeline{
   agent any
 
   environment{
-    IMAGE_NAME=delequesce/test_repo
+    IMAGE_NAME= 'delequesce/test_repo'
   }
 
   stages{
 
     stage('Checkout'){
       steps {
-        git branch 'main', url:https://github.com/Delequesce/Test-Repo
+        git branch 'main', url: 'https://github.com/Delequesce/Test-Repo'
       }
     }
     stage('Build Docker Image'){
