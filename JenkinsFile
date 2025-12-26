@@ -10,7 +10,7 @@ pipeline{
 
     stage('Checkout'){
       steps {
-        git branch 'main', url: 'https://github.com/Delequesce/Test-Repo'
+        git branch 'main', url: 'https://github.com/Delequesce/Test_Repo'
       }
     }
     stage('Build Docker Image'){
